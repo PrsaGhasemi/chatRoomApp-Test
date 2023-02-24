@@ -21,7 +21,7 @@ server.listen(PORT , () => {
 //WebSocket Creator
 users = {}
 io.on("connection" , (socket) => {
-
+    console.log(socket);
 //Listening
     socket.on("login", (nickname) => {
         console.log(`${nickname} connected`);
